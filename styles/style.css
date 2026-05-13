@@ -66,6 +66,7 @@
 .card {
   inline-size: var(--container-width);
   min-block-size: auto;
+  max-block-size: auto;
   background-color: #fff;
   border: 2px solid #000;
 }
@@ -87,6 +88,7 @@
   object-position: center;
   width: 100%;
   max-width: 696px;
+  max-height: 696px;
 }
 
 .label {
@@ -110,7 +112,7 @@
 
 @supports ((-webkit-text-stroke: 1px white) or (text-stroke: 1px white)) {
 
-  label {
+  .label {
     text-shadow: none;
     -webkit-text-stroke: 1px #FFFFFF;
     text-stroke: 1px #FFFFFF;
@@ -169,6 +171,7 @@
 .save_button {
   block-size: 84px;
   padding: 15px 20px;
+  margin-bottom: 100px;
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
